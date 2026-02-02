@@ -56,9 +56,9 @@ Built a comprehensive analytics pipeline that:
 |--------|---------------|---------|
 | Total Net Profit | $8,939 | Bottom-line quarterly performance |
 | Active SKUs | 90 | Portfolio breadth across 10 categories |
-| Average Margin | 11.3% | After all Amazon fees and COGS |
+| Average Margin | 12.4% | After all Amazon fees and COGS |
 | Units Sold | 1,772 | Total quarterly volume |
-| Avg Daily Profit | $95.67 | Baseline for forecasting |
+| Avg Daily Profit | $97.16 | Baseline for forecasting |
 
 ---
 
@@ -98,7 +98,7 @@ Using a custom health scoring algorithm, 52% of SKUs are performing well (Star +
 | Sunday | $69.22 |
 
 ### 4. Refund Risk
-8 SKUs have refund rates >15%, indicating potential quality issues requiring investigation.
+15 SKUs have refund rates >15%, indicating potential quality issues requiring investigation.
 
 ---
 
@@ -232,14 +232,20 @@ FROM weekly_stats;
 | SKU | string | Anonymized product identifier |
 | Category | string | Product category (10 categories) |
 | Units_Sold | int | Total units sold in Q2 |
+| Refunds | int | Number of refunds |
 | Revenue | float | Total sales revenue |
 | COGS | float | Cost of goods sold |
 | Amazon_Fees | float | All Amazon fees (commission, FBA, etc.) |
-| Net_Profit | float | Revenue - COGS - Fees |
+| Gross_Profit | float | Revenue - Amazon Fees |
+| Net_Profit | float | Revenue - COGS - Amazon Fees |
 | Margin_Pct | float | Net Profit / Revenue × 100 |
 | ROI_Pct | float | Net Profit / COGS × 100 |
 | Health_Score | int | Custom 0-100 performance score |
-| Performance_Tier | string | Star/Strong/Average/Weak/Liquidate |
+| Performance_Tier | string | Star/Strong/Average/Weak |
+| Refund_Rate_Pct | float | Refunds / Units Sold × 100 |
+| Avg_Sale_Price | float | Revenue / Units Sold |
+| Profit_Per_Unit | float | Net Profit / Units Sold |
+| Sessions | int | Product page sessions |
 
 ### tableau_daily_data.csv
 
@@ -250,11 +256,19 @@ FROM weekly_stats;
 | Units_Sold | int | Daily units |
 | Orders | int | Number of orders |
 | Refunds | int | Number of refunds |
+| Amazon_Commission | float | Amazon referral fees |
+| FBA_Fees | float | Fulfillment by Amazon fees |
+| COGS | float | Cost of goods sold |
+| Gross_Profit | float | Revenue - Amazon fees |
 | Net_Profit | float | Daily profit |
-| Margin_Pct | float | Daily margin |
-| Profit_7day_MA | float | 7-day moving average |
+| Margin_Pct | float | Daily margin percentage |
+| Sessions | int | Daily traffic sessions |
+| Profit_7day_MA | float | 7-day profit moving average |
+| Units_7day_MA | float | 7-day units moving average |
+| Revenue_7day_MA | float | 7-day revenue moving average |
 | Day_of_Week | string | Monday-Sunday |
 | Week_Number | int | ISO week number |
+| Conversion_Rate_Pct | float | Orders / Sessions × 100 |
 
 ---
 
