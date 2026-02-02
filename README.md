@@ -4,7 +4,7 @@ An end-to-end business intelligence project analyzing quarterly performance for 
 
 ![Dashboard Preview](docs/dashboard_preview.png)
 
-**[View Live Dashboard on Tableau Public →](YOUR_TABLEAU_PUBLIC_LINK_HERE)**
+**[View Live Dashboard on Tableau Public →](https://public.tableau.com/app/profile/franklin.le3494/viz/Q22025SKUProfitabilityVelocityAnalysis/Dashboard)**
 
 ---
 
@@ -274,7 +274,7 @@ FROM weekly_stats;
 
 ## 🚀 How to Use This Repository
 
-1. **View the Dashboard**: [Tableau Public Link](YOUR_TABLEAU_PUBLIC_LINK_HERE)
+1. **View the Dashboard**: [Tableau Public Link](https://public.tableau.com/app/profile/franklin.le3494/viz/Q22025SKUProfitabilityVelocityAnalysis/Dashboard)
 
 2. **Explore the Data**:
    ```bash
@@ -307,9 +307,9 @@ FROM weekly_stats;
 ## 👤 Author
 
 **Your Name**
-- LinkedIn: [your-linkedin](https://linkedin.com/in/YOUR_LINKEDIN)
-- Tableau Public: [your-profile](https://public.tableau.com/app/profile/YOUR_PROFILE)
-- GitHub: [@your-username](https://github.com/YOUR_USERNAME)
+- LinkedIn: [your-linkedin](https://www.linkedin.com/in/franklinle/)
+- Tableau Public: [your-profile](https://public.tableau.com/app/profile/franklin.le3494/vizzes)
+- GitHub: [@your-username](https://github.com/franklinle)
 
 ---
 
