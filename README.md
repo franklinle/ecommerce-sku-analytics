@@ -307,9 +307,9 @@ FROM weekly_stats;
 ## 👤 Author
 
 **Your Name**
-- LinkedIn: [your-linkedin](https://www.linkedin.com/in/franklinle/)
-- Tableau Public: [your-profile](https://public.tableau.com/app/profile/franklin.le3494/vizzes)
-- GitHub: [@your-username](https://github.com/franklinle)
+- LinkedIn: [franklinle](https://www.linkedin.com/in/franklinle/)
+- Tableau Public: [https://public.tableau.com/app/profile/franklin.le3494/vizzes](https://public.tableau.com/app/profile/franklin.le3494/vizzes)
+- GitHub: [@franklinle](https://github.com/franklinle)
 
 ---
 
