@@ -6,6 +6,8 @@ An end-to-end business intelligence project analyzing quarterly performance for 
 
 **[View Live Dashboard on Tableau Public →](https://public.tableau.com/app/profile/franklin.le3494/viz/Q22025SKUProfitabilityVelocityAnalysis/Dashboard)**
 
+> **Disclaimer:** Financial values have been scaled and adjusted to protect proprietary business information. The data preserves realistic patterns and proportional relationships.
+
 ---
 
 ## 📊 Project Overview
@@ -315,4 +317,4 @@ FROM weekly_stats;
 
 ## 📄 License
 
-This project is for portfolio/educational purposes. Data has been anonymized to protect business information.
+This project is for portfolio/educational purposes. Financial values have been scaled and adjusted, and SKUs have been anonymized to protect proprietary business information.
